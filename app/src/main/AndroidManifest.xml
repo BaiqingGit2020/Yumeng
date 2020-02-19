@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chanshiguan.yumeng">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="i2pA3NcL2grgIekDLdfcxedrDoDGXs5l" />
+
+        <activity android:name=".WelcomeActivity">Ff
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".FoodItemActivity" />
+        <activity android:name=".ItemDetailActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".PetHospitalActivity" />
+        <activity android:name=".WebViewActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".imageviewone" />
+        <activity android:name=".imageviewtwo" />
+        <activity android:name=".shop2" />
+        <activity android:name=".ceshi" />
+        <activity android:name=".shopping" />
+        <activity android:name=".SelectPicPopupWindow" />
+        <activity android:name=".tanchu2" />
+        <activity android:name=".shop" />
+        <activity android:name=".CollectionActivity" />
+        <activity android:name=".UserSetingActivity" />
+        <activity android:name=".AppAboutActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".CurrentLocationDemo"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".MapOverlayDemo"
+            android:theme="@style/AppTheme">
+
+        </activity>
+    </application>
+
+</manifest>

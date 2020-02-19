@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppAboutActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="版本号：1.0.1"/>
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/about_format"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            leon:leftText="检查更新" />
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/about_can"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftText="版本说明" />
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/about_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftText="版权信息" />
+    </LinearLayout>
+</FrameLayout>

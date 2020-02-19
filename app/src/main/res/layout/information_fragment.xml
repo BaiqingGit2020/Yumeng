@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:minHeight="30dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_search"
+                android:paddingLeft="10dp"
+                android:paddingRight="4dp"
+                android:layout_marginLeft="9dp"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:src="@drawable/sousuo" />
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_search"
+                android:textSize="13sp"
+                android:hint="输入商家、分类或商圈"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="*">
+
+
+        <TableRow >
+
+            <ImageView
+                android:id="@+id/yiyuan"
+                android:layout_width="0dp"
+                android:src="@drawable/yiyuan" />
+
+            <ImageView
+                android:id="@+id/meirong"
+                android:layout_width="0dp"
+                android:src="@drawable/meirong" />
+
+            <ImageView
+                android:id="@+id/shangdian"
+                android:layout_width="0dp"
+                android:src="@drawable/shangdian"/>
+
+            <ImageView
+                android:id="@+id/hunli"
+                android:layout_width="0dp"
+                android:src="@drawable/hunli" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/yiyuan1"
+                android:layout_gravity="center_horizontal"
+                android:text="医院" />
+
+            <TextView
+                android:id="@+id/meirong1"
+                android:layout_gravity="center_horizontal"
+                android:text="美容" />
+
+            <TextView
+                android:id="@+id/shangdian1"
+                android:layout_gravity="center_horizontal"
+                android:text="商店" />
+
+            <TextView
+                android:id="@+id/hunli1"
+                android:layout_gravity="center_horizontal"
+                android:text="婚礼" />
+        </TableRow>
+
+        <TableRow >
+
+            <ImageView
+                android:id="@+id/lingyang"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/lingyang" />
+
+            <ImageView
+                android:id="@+id/jiyang"
+                android:layout_gravity="center_horizontal"
+                 android:src="@drawable/jiyang"/>
+
+            <ImageView
+                android:id="@+id/binzang"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/binzang" />
+
+            <ImageView
+                android:id="@+id/gengduo"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/gengduo" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/lingyang1"
+                android:layout_gravity="center_horizontal"
+                android:text="领养" />
+
+            <TextView
+                android:id="@+id/寄养1"
+                android:layout_gravity="center_horizontal"
+                android:text="寄养" />
+
+            <TextView
+                android:id="@+id/binzang1"
+                android:layout_gravity="center_horizontal"
+                android:text="殡葬" />
+
+            <TextView
+                android:id="@+id/gengduo1"
+                android:layout_gravity="center_horizontal"
+                android:text="更多" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="今日推荐" />
+
+    <ImageView
+        android:id="@+id/image01"
+        android:layout_width="wrap_content"
+        android:layout_height="147dp"
+        android:src="@drawable/image01" />
+    <ImageView
+        android:id="@+id/image02"
+        android:layout_width="wrap_content"
+        android:layout_height="147dp"
+        android:src="@drawable/image02" />
+
+</LinearLayout>

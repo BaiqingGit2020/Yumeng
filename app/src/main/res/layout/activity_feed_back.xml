@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting"
+    android:orientation="vertical"
+    tools:context=".FeedBackActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:textSize="40sp"
+        android:text="反馈"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/text_write"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/feed_back"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="15dp"
+            android:hint="说出你的意见吧！我们将在下个版本改进"
+            />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/text_bg"
+            android:focusable="true"
+            android:text="提交"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton5"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/fishsiliao"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="饲料"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton6"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/shuicao"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="水草"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton7"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/fishhome"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="鱼缸"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton8"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/cloth"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="装饰"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/xihu"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="洗护"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/mediance"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="药品"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton3"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/wanju"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="玩具"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/Imagebutton4"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/qita"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="宠物交易"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/guanggao"/>
+</LinearLayout>
+</ScrollView>

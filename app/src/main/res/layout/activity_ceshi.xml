@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ceshi">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/RelativeLayout01"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+              <EditText android:id="@+id/name"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip" />
+              <TextView android:id="@+id/name_label"
+            android:text="姓名："
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_toRightOf="@id/name" android:layout_alignBaseline="@+id/name" />
+              <EditText android:id="@+id/count"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@id/name"
+            android:numeric="integer" />
+              <TextView android:id="@+id/count_label"
+            android:text="数量："
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/count" android:layout_alignBaseline="@+id/count" />
+              <EditText android:id="@+id/money"
+            android:layout_width="280dip"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@id/count"
+            android:numeric="decimal" />
+              <TextView android:id="@+id/money_label"
+            android:text="价格："
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:layout_toRightOf="@id/money" android:layout_alignBaseline="@+id/money" />
+
+
+              <EditText android:id="@+id/type"
+            android:layout_width="280dip"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@id/money"
+            />
+              <TextView android:id="@+id/type_label"
+            android:text="种类："
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:layout_toRightOf="@id/type" android:layout_alignBaseline="@+id/type" />
+
+
+
+            <EditText android:id="@+id/shopname"
+                android:layout_width="280dip"
+                android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dip"
+                android:layout_below="@id/type"
+                />
+              <TextView android:id="@+id/shopname_label"
+            android:text="商店名称："
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:layout_toRightOf="@id/shopname" android:layout_alignBaseline="@+id/shopname" />
+
+
+
+              </RelativeLayout>
+        <LinearLayout android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+              <Button android:id="@+id/add"
+            android:text="添加数据"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_weight="1" />
+              <Button android:id="@+id/query_all"
+            android:text="全部显示"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_weight="1" />
+              <Button android:id="@+id/clear"
+            android:text="清除显示"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_weight="1" />
+              <Button android:id="@+id/delete_all"
+            android:text="全部删除"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_weight="1" />
+              </LinearLayout>
+        <LinearLayout android:id="@+id/LinearLayout03"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+              <TextView android:text="ID："
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="3dip" />
+              <EditText android:id="@+id/id_entry"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_weight="1" />
+              <Button android:id="@+id/delete"
+            android:text="ID删除"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="3dip" android:layout_weight="1" />
+              <Button android:id="@+id/query"
+            android:text="ID查询"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_weight="1" />
+              <Button android:id="@+id/update"
+            android:text="ID更新"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_weight="1" />
+              </LinearLayout>
+          <TextView android:id="@+id/label"
+        android:text="查询结果："
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                 <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+                  </LinearLayout>
+              </ScrollView>
+          </LinearLayout>
+</android.support.constraint.ConstraintLayout>

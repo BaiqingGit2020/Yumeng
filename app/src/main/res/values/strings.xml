@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">育萌</string>
+    <string name="information">所有</string>
+    <string name="register"> </string>
+    <string name="server">http://yumeng2019.w3.luyouxia.net</string>
+    <string name="host">192.168.43.19</string>
+</resources><!--IPv4 地址:	192.168.123.113--><!--SSID:	10.0.2.2--><!--IPv4 地址:	192.168.43.19--><!--SSID:	1903PeiYangTimeCafe1--><!--IPv4 地址:	192.168.1.25-->
+
+
+

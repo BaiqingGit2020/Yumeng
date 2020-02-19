@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting"
+    android:orientation="vertical"
+    tools:context=".UserSetingActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/setting_safe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftText="安全设置" />
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/setting_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftText="通用设置" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/setting_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftText="求助反馈" />
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftText="关于" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftText="退出登录"
+        leon:LtextColor="@color/text_red" />
+</LinearLayout>
